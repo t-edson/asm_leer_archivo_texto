@@ -1,6 +1,11 @@
+;Lectura de archivo de texto, línea por línea en ensamblador (MASM32), 
+;usando un bloque de memoria temporal de tamaño fijo.
+;Trabaja sobre Windows y reconoce diversos delimitadores de línea.
+;                                       Por Tito Hinostroza 28/04/2023
+
 include \masm32\include\masm32rt.inc
 .const
-    LINE_SIZE = 100         ;Longitud máxima de una línea
+    LINE_SIZE = 100         ;Longitud máxima del bloque y de la línea.
 .data
     filePath   db "input.tit", 0
     hFile      HANDLE ?     ;Manejador de archivo 
