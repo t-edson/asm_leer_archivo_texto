@@ -8,7 +8,7 @@ include \masm32\include\masm32rt.inc
 .data
     filePath    db "input.tit",0
     hFile       dd ?    ;Manejador de archivo.
-    bytesRead   dd ?    ;Tamaño del archivo leídor.
+    bytesRead   dd ?    ;Tamaño del archivo leído.
     buffer      dd ?    ;Puntero a la memoria dinámica
     p_line      dd ?    ;Puntero a inicio de línea en "buffer".
     p_eol       dword ? ;Puntero a fin de línea en "buffer".
